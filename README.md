@@ -1,4 +1,6 @@
 # The Cindle Portal
+>*Cindle Portal is currently in development*
+
 The Cindle portal is a place where freelancers can easily collaborate, make tasks, maintain hours and share inspiration.
 
 ## Cindle Pages
@@ -39,3 +41,14 @@ This page is a place to share and review any inspiration uploaded by your networ
 >*routes: /logout*
 
 We are using useraccounts:materialize, useraccounts:iron-router in the Cindle portal. Every page is login protected (since it is not very likely to be using the Cindle portal without one.). 
+
+## Dependencies
+Cindle portal relies on the following dependencies (meteor packages).
+
+- iron:router
+- useraccounts:iron-router
+- useraccounts:materialize
+- materialize:materialize
+- fourseven:scss
+- accounts-password
+- ejson

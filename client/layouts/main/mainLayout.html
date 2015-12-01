@@ -1,4 +1,11 @@
 
 <template name="MainLayout">
-	{{> yield}}
+
+	<header>
+		{{> yield region="nav"}}
+	</header>
+	<main>
+		{{> yield}}
+	</main>
+	
 </template>

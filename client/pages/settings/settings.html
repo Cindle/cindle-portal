@@ -1,4 +1,41 @@
 
 <template name="Settings">
-	Settings
+	<div class="container">
+		<div class="row">
+			<div class="col s12  m12   l12">
+				<h1>Settings</h1>
+			</div>
+
+			<div class="col s12  m6   l6">
+				<h5>Enable Geolocation</h5>
+			</div>
+			<div class="col s12  m6   l6">
+				<div class="switch">
+				    <label>
+				      Off
+				      {{#if currentUser.appSettings.geolocation}}
+				      	<input type="checkbox" checked>
+				      {{else}}
+				      	<input type="checkbox" >
+				      {{/if}}
+				      <span class="lever"></span>
+				      On
+				    </label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12  m12   l12">
+				<h1>Profile</h1>
+			</div>
+			<div class="col s12  m6   l6">
+				<h4>{{currentUser.profile.firstname}} {{currentUser.profile.lastname}}</h4>
+				<h6>Gender: {{currentUser.profile.gender}}</h6>
+				<h6>Age: {{currentUser.profile.age}}</h6>
+			</div>
+			<div class="col s12  m6   l6">
+				<img src="{{currentUser.profile.avatar}}" class="circle" width="200px" height="200px">
+			</div>
+		</div>
+	</div>
 </template>

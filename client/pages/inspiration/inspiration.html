@@ -2,12 +2,17 @@
 
 <template name="Inspiration">
 	<div class="container">
+
 		<div class="row">
 			{{> inspirationLayout}}
 		</div>
 
 		<div class="row">
-			<!-- {{> posts} -->
+			<ul id="postList">
+				{{#each fetchPosts}}
+					{{> Post}}
+				{{/each}}
+			</ul>
 		</div>
 
 	</div>

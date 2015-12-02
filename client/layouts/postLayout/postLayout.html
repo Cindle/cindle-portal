@@ -1,0 +1,36 @@
+<template name="Post">
+	<div class="col s12 m12 l12">
+	  <div class="card blue-grey lighten-3">
+	    <div class="card-content">
+	      <span class="card-title brown-text">{{_id}}</span>
+	      <a class="" href="#">
+			<img src="http://sixgun.org/files/sisvel-chick.png" width="60px" height="60px" class="circle responsive-img left">
+		  </a>
+	      <p>{{post.text}}</p>
+
+	      	<ul>
+	    	{{#each fetchComment}}
+	    		{{> Comment}}
+	    	{{/each}}
+	    	</ul>
+	    	<div class="input-field">
+	      	  <label for="comment">any comments?</label>
+	          <input type="text" class="validate comment" name="comment" id="comment">
+	        </div>
+
+	    </div>
+
+
+	  </div>
+	</div>
+</template>
+
+<template name="Comment">
+	<li class="comment-offset">
+		<a class="" href="#">
+			<img src="http://img05.deviantart.net/c865/i/2006/210/6/e/ubuntu_wallpaper__1_by_leroi14.jpg" width="30px" height="30px" class="circle responsive-img left">
+		</a>
+		<h5><p class="commentText">{{_id}}</p></h5>
+		<p class="commentText">{{text}}</p>
+	</li>
+</template>

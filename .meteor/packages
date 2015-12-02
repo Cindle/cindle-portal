@@ -23,8 +23,5 @@ useraccounts:iron-routing
 accounts-password
 ejson
 fourseven:scss
-<<<<<<< HEAD
 markdown
-=======
 dburles:google-maps
->>>>>>> origin/master
